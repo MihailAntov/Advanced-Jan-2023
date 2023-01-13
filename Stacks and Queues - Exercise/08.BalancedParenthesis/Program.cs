@@ -5,7 +5,7 @@ using System.Linq;
 
 string input = Console.ReadLine();
 Stack<char> stack = new();
-
+bool balanced = true;
 for (int i = 0; i < input.Length; i++)
 {
     if (input[i] == '(' || input[i] == '{' || input[i] == '[')
@@ -14,6 +14,12 @@ for (int i = 0; i < input.Length; i++)
     }
     else if (input[i] == ')')
     {
+        if (stack.Count == 0)
+        {
+            balanced = false;
+            break;
+        }
+
         if (stack.Peek() == '(')
         {
             stack.Pop();
@@ -21,11 +27,18 @@ for (int i = 0; i < input.Length; i++)
         }
         else
         {
+            balanced = false;
             break;
         }
     }
     else if (input[i] == ']')
     {
+        if (stack.Count == 0)
+        {
+            balanced = false;
+            break;
+        }
+
         if (stack.Peek() == '[')
         {
             stack.Pop();
@@ -33,11 +46,18 @@ for (int i = 0; i < input.Length; i++)
         }
         else
         {
+            balanced = false;
             break;
         }
     }
     else if (input[i] == '}')
     {
+        if (stack.Count == 0)
+        {
+            balanced = false;
+            break;
+        }
+
         if (stack.Peek() == '{')
         {
             stack.Pop();
@@ -45,11 +65,12 @@ for (int i = 0; i < input.Length; i++)
         }
         else
         {
+            balanced = false;
             break;
         }
     }
 }
-if (stack.Any())
+if (!balanced)
 {
     Console.WriteLine("NO");
 }
