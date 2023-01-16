@@ -79,7 +79,7 @@ foreach(char command in commands)
     {
         dead = true;
     }
-    else
+    else if (!won && !dead)
     {
         matrix[currentRow, currentCol] = 'P';
     }
