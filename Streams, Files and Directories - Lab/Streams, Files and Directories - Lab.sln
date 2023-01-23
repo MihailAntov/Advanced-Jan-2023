@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OddLines", "Skeleton\Skeleton-Lab\OddLines\OddLines.csproj", "{01CEFB47-9BDD-4B78-92BD-A9D4117AA833}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LineNumbers", "Skeleton\Skeleton-Lab\LineNumbers\LineNumbers.csproj", "{F7C4A62A-527F-439B-B620-743FF1169F75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01CEFB47-9BDD-4B78-92BD-A9D4117AA833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CEFB47-9BDD-4B78-92BD-A9D4117AA833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CEFB47-9BDD-4B78-92BD-A9D4117AA833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CEFB47-9BDD-4B78-92BD-A9D4117AA833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C4A62A-527F-439B-B620-743FF1169F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C4A62A-527F-439B-B620-743FF1169F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C4A62A-527F-439B-B620-743FF1169F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C4A62A-527F-439B-B620-743FF1169F75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD3F2069-C207-4DC2-BD5B-E13EDCF4A302}
+	EndGlobalSection
+EndGlobal
