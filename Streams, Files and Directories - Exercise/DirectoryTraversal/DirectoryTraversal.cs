@@ -54,12 +54,8 @@
 
         public static void WriteReportToDesktop(string textContent, string reportFileName)
         {
-            string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), reportFileName);
-            using (FileStream writer = new FileStream(path, FileMode.Create))
-            {
-                byte[] textBuffer = new byte[textContent.Length];
-                writer.Write(textBuffer,0,textContent.Length);
-            }
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+ reportFileName;
+            File.WriteAllText(path, textContent);
         }
     }
 }
