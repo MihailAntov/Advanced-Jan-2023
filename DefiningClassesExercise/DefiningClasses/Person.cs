@@ -8,27 +8,30 @@ namespace DefiningClasses
 {
     public class Person
     {
-        public Person()
-        {
-            Name = "No name";
-            Age = 1;
-        }
+        //public Person()
+        //{
+        //    Name = "No name";
+        //    Age = 1;
+        //}
 
-        public Person(int age) : this()
-        {
-            Age = age;
-        }
+        //public Person(int age) : this()
+        //{
+        //    Age = age;
+        //}
 
-        public Person(string name, int age) : this(age)
-        {
-            Name = name;
-        }
-        public string Name { get; set; }
-        public int Age { get; set; }
+        //public Person(string name, int age) : this(age)
+        //{
+        //    Name = name;
+        //}
 
-        public void Print()
-        {
-            Console.WriteLine($"{Name} - {Age}");
-        }
+        private string name;
+        private int age;
+        public string Name { get { return name; } set { name = value; } }
+        public int Age { get { return age; } set { age = value; } }
+
+        //public void Print()
+        //{
+        //    Console.WriteLine($"{Name} - {Age}");
+        //}
     }
 }

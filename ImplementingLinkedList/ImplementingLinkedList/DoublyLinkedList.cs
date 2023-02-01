@@ -10,14 +10,16 @@ namespace ImplementingLinkedList
     {
         public DoublyLinkedList()
         {
-
+            
         }
         public Node Head { get; set; }
         public Node Tail { get; set; }
+        public int Count { get; set; }
         public void AddFirst(int value)
         {
             
             Node newNode = new Node(value);
+            Count++;
             if (Head == null)
             {
                 
@@ -35,6 +37,7 @@ namespace ImplementingLinkedList
         public void AddLast(int value)
         {
             Node newNode = new Node(value);
+            Count++;
             if (Tail == null)
             {
 
@@ -60,10 +63,10 @@ namespace ImplementingLinkedList
 
         public int RemoveFirst()
         {
-            
             int result = Head.Value;
             Head = Head.Next == null ? null : Head.Next;
             Head.Prev = null;
+            Count--;
             return result; 
         }
 
@@ -79,6 +82,7 @@ namespace ImplementingLinkedList
             int result = Tail.Value;
             Tail = Tail.Prev == null ? null : Tail.Prev;
             Tail.Next = null;
+            Count--;
             return result;
         }
 
