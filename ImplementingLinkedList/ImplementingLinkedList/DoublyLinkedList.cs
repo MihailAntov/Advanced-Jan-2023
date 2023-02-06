@@ -4,128 +4,162 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ImplementingLinkedList
+namespace CustomDoublyLinkedList
 {
-    internal class DoublyLinkedList
+    public class DoublyLinkedList<T>
     {
-        public DoublyLinkedList()
+        private Node<T> head;
+        private Node<T> tail;
+        public int Count { get; private set; }
+        public void AddFirst(T value)
         {
-            
-        }
-        public Node Head { get; set; }
-        public Node Tail { get; set; }
-        public int Count { get; set; }
-        public void AddFirst(int value)
-        {
-            
-            Node newNode = new Node(value);
+
+            Node<T> newNode = new Node<T>(value);
             Count++;
-            if (Head == null)
+            if (head == null)
             {
-                
-                Head = newNode;
-                Tail = newNode;
+
+                head = newNode;
+                tail = newNode;
             }
             else
             {
-                Head.Prev = newNode;
-                newNode.Next = Head;
-                Head = newNode;
+                head.Previous = newNode;
+                newNode.Next = head;
+                head = newNode;
             }
         }
 
-        public void AddLast(int value)
+        public void AddLast(T value)
         {
-            Node newNode = new Node(value);
+            Node<T> newNode = new Node<T>(value);
             Count++;
-            if (Tail == null)
+            if (tail == null)
             {
 
-                Head = newNode;
-                Tail = newNode;
+                head = newNode;
+                tail = newNode;
                 return;
             }
-            
-            
-            Tail.Next = newNode;
-            newNode.Prev = Tail;
-            Tail = newNode;
+
+
+            tail.Next = newNode;
+            newNode.Previous = tail;
+            tail = newNode;
             
         }
     
 
-        public int PeakFirst()
-        {
-            int result = Head.Value;
-            return result;
+        //public T PeakFirst()
+        //{
+        //    T result = Head.Value;
+        //    return result;
             
-        }
+        //}
 
-        public int RemoveFirst()
+        public T RemoveFirst()
         {
-            int result = Head.Value;
-            Head = Head.Next == null ? null : Head.Next;
-            Head.Prev = null;
-            Count--;
-            return result; 
-        }
-
-
-        public int PeakLast()
-        {
-            int result = Tail.Value;
-            return result;
-        }
-
-        public int RemoveLast()
-        {
-            int result = Tail.Value;
-            Tail = Tail.Prev == null ? null : Tail.Prev;
-            Tail.Next = null;
-            Count--;
-            return result;
-        }
-
-        public void Print()
-        {
-            Node currentNode = Head;
-            while(currentNode != null)
+            if (Count == 0)
             {
-                Console.Write($"{currentNode.Value} ");
+                throw new InvalidOperationException("The list is empty");
+            }
+
+            T result = head.Value;
+
+            head = head.Next;
+            if(head != null)
+            {
+                head.Previous = null;
+            }
+            else
+            {
+                tail = null;
+            }
+            Count--;
+            return result;
+        }
+
+
+        //public T PeakLast()
+        //{
+        //    T result = Tail.Value;
+        //    return result;
+        //}
+
+        public T RemoveLast()
+        {
+            if (Count == 0)
+            {
+                throw new InvalidOperationException("The list is empty");
+            }
+            T result = tail.Value;
+            tail = tail.Previous;
+            if(tail != null)
+            {
+                tail.Next = null;
+            }
+            else
+            {
+                head = null;
+            }
+            
+            
+            Count--;
+            return result;
+        }
+
+        //public void Print()
+        //{
+        //    ListNode<T> currentNode = Head;
+        //    while(currentNode != null)
+        //    {
+        //        Console.Write($"{currentNode.Value} ");
+        //        currentNode = currentNode.NextNode;
+        //    }
+        //    Console.Write(Environment.NewLine);
+        //}
+
+        //public void PrintInReverse()
+        //{
+        //    ListNode<T> currentNode = Tail;
+        //    while (currentNode != null)
+        //    {
+        //        Console.Write($"{currentNode.Value} ");
+        //        currentNode = currentNode.PreviousNode;
+        //    }
+        //    Console.Write(Environment.NewLine);
+        //}
+
+        public void ForEach(Action<T> action)
+        {
+            Node<T> current = head;
+            while(current != null)
+            {
+                action(current.Value);
+                current = current.Next;
+            }
+        }
+
+        //public void ForEachReversed(Action<ListNode<T>> action)
+        //{
+        //    ListNode<T> tail = Tail;
+        //    while (tail != null)
+        //    {
+        //        action(tail);
+        //        tail = tail.PreviousNode;
+        //    }
+        //}
+
+        public T[] ToArray()
+        {
+            T[] result = new T[Count];
+            Node<T> currentNode = head;
+            for(int i = 0; i < Count; i++)
+            {
+                result[i] = currentNode.Value;
                 currentNode = currentNode.Next;
             }
-            Console.Write(Environment.NewLine);
-        }
-
-        public void PrintInReverse()
-        {
-            Node currentNode = Tail;
-            while (currentNode != null)
-            {
-                Console.Write($"{currentNode.Value} ");
-                currentNode = currentNode.Prev;
-            }
-            Console.Write(Environment.NewLine);
-        }
-
-        public void ForEach(Action<Node> action)
-        {
-            Node head = Head;
-            while(head != null)
-            {
-                action(head);
-                head = head.Next;
-            }
-        }
-
-        public void ForEachReversed(Action<Node> action)
-        {
-            Node tail = Tail;
-            while (tail != null)
-            {
-                action(tail);
-                tail = tail.Prev;
-            }
+            return result;
         }
 
 
