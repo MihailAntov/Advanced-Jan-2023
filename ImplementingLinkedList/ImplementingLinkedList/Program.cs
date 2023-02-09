@@ -8,7 +8,27 @@ namespace CustomDoublyLinkedList
     {
         public static void Main(string[] args)
         {
+            DoublyLinkedList<int> ints = new DoublyLinkedList<int>();
+            ints.AddLast(1);
+            ints.AddLast(2);
+            ints.AddLast(3);
+            ints.AddLast(4);
 
+            DoublyLinkedList<string> strings = new DoublyLinkedList<string>();
+            strings.AddFirst("one");
+            strings.AddFirst("two");
+            strings.AddFirst("three");
+            strings.AddFirst("four");
+
+            foreach(var item in ints)
+            {
+                Console.WriteLine(item);
+            }
+
+            foreach(string item in strings)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
