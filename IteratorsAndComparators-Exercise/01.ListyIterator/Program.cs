@@ -24,6 +24,7 @@ while((input = Console.ReadLine())!= "END")
             break;
         case "HasNext":
             Console.WriteLine(listy.HasNext());
+            
             break;
         case "PrintAll":
             listy.PrintAll();

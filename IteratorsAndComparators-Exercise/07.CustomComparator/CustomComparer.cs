@@ -10,20 +10,22 @@ namespace CustomComparator
     {
         public int Compare(int x, int y)
         {
-            if(x%2 == 0 && y%2 != 0)
+            return comparator(x, y);
+        }
+
+        private Func<int, int, int> comparator = (x, y) =>
+        {
+            if (x % 2 == 0 && y % 2 != 0)
             {
                 return -1;
             }
-            else if(x %2 != 0 && y %2 == 0)
+
+            if (x % 2 != 0 && y % 2 == 0)
             {
                 return 1;
             }
-            else
-            {
-                return x.CompareTo(y);
-            }
 
-
-        }
+            return x.CompareTo(y);
+        };
     }
 }

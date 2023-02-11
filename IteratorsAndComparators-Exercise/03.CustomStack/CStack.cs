@@ -34,8 +34,7 @@ namespace _03.CustomStack
         {
             if(count == 0)
             {
-                Console.WriteLine("No elements");
-                return null;
+                throw new InvalidOperationException("No elements");
             }
             
             T result = items[count-1];
@@ -46,7 +45,10 @@ namespace _03.CustomStack
 
         public void Push(params T[] values)
         {
-            items.AddRange(values);
+            foreach(T item in values)
+            {
+                items.Add(item);
+            }
             count += values.Length;
         }
     }

@@ -2,7 +2,7 @@
 using System.Linq;
 using _03.CustomStack;
 
-CStack<int> ints = new CStack<int>();
+CStack<string> items = new CStack<string>();
 
 string input;
 
@@ -10,27 +10,34 @@ while((input = Console.ReadLine()) != "END")
 {
     if(input == "Pop")
     {
-        
-        ints.Pop();
+        try
+        {
+            items.Pop();
+            
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            
+        }
         continue;
     }
 
-    
-    
 
-    int[] inputParams = input.Substring(5)
-        .Split(", ", StringSplitOptions.RemoveEmptyEntries)
-        .Select(n=>int.Parse(n))
+
+    string[] inputParams = input
+        .Split(new char[] {',',' '}, StringSplitOptions.RemoveEmptyEntries)
+        .Skip(1)
         .ToArray();
 
-    ints.Push(inputParams);
+    items.Push(inputParams);
 }
 
-foreach(var item in ints)
+foreach(var item in items)
 {
     Console.WriteLine(item);
 }
-foreach (var item in ints)
+foreach (var item in items)
 {
     Console.WriteLine(item);
 }

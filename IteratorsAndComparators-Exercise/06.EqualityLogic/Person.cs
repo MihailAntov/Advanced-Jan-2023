@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EqualityLogic
 {
-    public class Person : IComparable<Person>, IEquatable<Person> 
+    public class Person : IComparable<Person>, IEquatable<Person>
     {
         public Person(string name, int age)
         {
@@ -36,6 +36,8 @@ namespace EqualityLogic
         {
             return this.CompareTo(other) == 0;
         }
+
+
 
         public override int GetHashCode()
         {
