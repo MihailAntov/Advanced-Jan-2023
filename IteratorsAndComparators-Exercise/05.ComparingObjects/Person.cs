@@ -56,7 +56,7 @@ namespace ComparingObjects
             }
             else
             {
-                Console.WriteLine("No matches.");
+                Console.WriteLine("No matches");
             }
             
         }

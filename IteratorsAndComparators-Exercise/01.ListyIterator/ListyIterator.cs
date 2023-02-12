@@ -52,6 +52,7 @@ namespace NSListyIterator
             {
                 Console.Write(item+" ");
             }
+            Console.WriteLine();
         }
 
         public IEnumerator<T> GetEnumerator()

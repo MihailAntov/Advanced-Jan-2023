@@ -15,6 +15,7 @@ namespace ComputerArchitecture
         }
         public string Model { get; set; }
         public int Capacity { get; set; }
+        public List<CPU> Multiprocessor { get { return multiprocessor; } }
         public int Count { get { return multiprocessor.Count; } }
         public void Add(CPU cpu)
         {
@@ -56,7 +57,7 @@ namespace ComputerArchitecture
         {
             StringBuilder str = new StringBuilder();
 
-            str.AppendLine($"CPUs in the Computer {Model}");
+            str.AppendLine($"CPUs in the Computer {Model}:");
             foreach(CPU cpu in multiprocessor)
             {
                 str.AppendLine(cpu.ToString());

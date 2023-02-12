@@ -10,7 +10,7 @@ namespace EqualityLogic
     {
         public Person(string name, int age)
         {
-            Name = name.ToLower();
+            Name = name;
             Age = age;
         }
 
@@ -37,31 +37,16 @@ namespace EqualityLogic
             return this.CompareTo(other) == 0;
         }
 
+        public override bool Equals(object obj)
+        {
+            return this.CompareTo(obj as Person) == 0;
+        }
+
 
 
         public override int GetHashCode()
         {
-            int result = 0;
-            for(int i = 0; i< Name.Length; i++)
-            {
-                if(i%2 == 0)
-                {
-                    result += Name[i];
-                }
-                else
-                {
-                    result *= Name[i];
-                }
-            }
-
-            int currentAge = Age;
-            while(currentAge != 0)
-            {
-                result *= currentAge % 10;
-                currentAge /= 10;
-            }
-
-            return result;
+            return Name.GetHashCode() + Age.GetHashCode();
         }
     }
 }

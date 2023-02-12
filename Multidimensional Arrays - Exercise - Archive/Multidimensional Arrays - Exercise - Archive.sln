@@ -11,15 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.SquaresInMatrix", "3.Squa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.MaximalSum", "4.MaximalSum\4.MaximalSum.csproj", "{D0944A3E-0ED1-4BD3-B887-418E90AD917F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.RubiksMatrix", "5.RubiksMatrix\5.RubiksMatrix.csproj", "{56A8513D-29AB-42D3-9518-0DFAFE53A08C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.RubiksMatrix", "5.RubiksMatrix\5.RubiksMatrix.csproj", "{56A8513D-29AB-42D3-9518-0DFAFE53A08C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.TargetPractice", "6.TargetPractice\6.TargetPractice.csproj", "{AB05FE85-5ED0-4AA4-B01C-FE946827F842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.TargetPractice", "6.TargetPractice\6.TargetPractice.csproj", "{AB05FE85-5ED0-4AA4-B01C-FE946827F842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.LegoBlocks", "7.LegoBlocks\7.LegoBlocks.csproj", "{52AD5F39-DCCF-4590-BF63-A75A22961A97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.LegoBlocks", "7.LegoBlocks\7.LegoBlocks.csproj", "{52AD5F39-DCCF-4590-BF63-A75A22961A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.RadioactiveBunnies", "8.RadioactiveBunnies\8.RadioactiveBunnies.csproj", "{1A7CCCEA-5907-4B68-B69B-CAB16E42B00B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.RadioactiveBunnies", "8.RadioactiveBunnies\8.RadioactiveBunnies.csproj", "{1A7CCCEA-5907-4B68-B69B-CAB16E42B00B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.Crossfire", "9.Crossfire\9.Crossfire.csproj", "{43B0137D-DF36-4225-B4BB-4E5F43D661C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9.Crossfire", "9.Crossfire\9.Crossfire.csproj", "{43B0137D-DF36-4225-B4BB-4E5F43D661C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.TheHeiganDance", "10.TheHeiganDance\10.TheHeiganDance.csproj", "{8ECB9A06-8D9F-4970-8912-240BD123D79B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.ParkingSystem", "11.ParkingSystem\11.ParkingSystem.csproj", "{B9AB3A00-E65F-4B30-BC82-36EADC597991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.StringMatrixRotation", "12.StringMatrixRotation\12.StringMatrixRotation.csproj", "{0CF1FE3C-3FA8-4806-B266-EDD5A0517536}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{43B0137D-DF36-4225-B4BB-4E5F43D661C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43B0137D-DF36-4225-B4BB-4E5F43D661C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43B0137D-DF36-4225-B4BB-4E5F43D661C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ECB9A06-8D9F-4970-8912-240BD123D79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ECB9A06-8D9F-4970-8912-240BD123D79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ECB9A06-8D9F-4970-8912-240BD123D79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ECB9A06-8D9F-4970-8912-240BD123D79B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AB3A00-E65F-4B30-BC82-36EADC597991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AB3A00-E65F-4B30-BC82-36EADC597991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AB3A00-E65F-4B30-BC82-36EADC597991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AB3A00-E65F-4B30-BC82-36EADC597991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF1FE3C-3FA8-4806-B266-EDD5A0517536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF1FE3C-3FA8-4806-B266-EDD5A0517536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF1FE3C-3FA8-4806-B266-EDD5A0517536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF1FE3C-3FA8-4806-B266-EDD5A0517536}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
