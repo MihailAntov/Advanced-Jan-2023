@@ -9,23 +9,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.RallyRacing", "02.RallyR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerArchitecture", "ComputerArchitecture\ComputerArchitecture.csproj", "{23DD82A0-2D50-4A65-AA3C-762CC25D2283}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ClimbThePeaks", "01.ClimbThePeaks\01.ClimbThePeaks.csproj", "{668F66C9-E7DD-47F1-8857-CC1CDFEF7BE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.ClimbThePeaks", "01.ClimbThePeaks\01.ClimbThePeaks.csproj", "{668F66C9-E7DD-47F1-8857-CC1CDFEF7BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.NavyBattle", "02.NavyBattle\02.NavyBattle.csproj", "{9BFBB2DC-4973-4E57-B762-DC9C21025C87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.NavyBattle", "02.NavyBattle\02.NavyBattle.csproj", "{9BFBB2DC-4973-4E57-B762-DC9C21025C87}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoeStore", "03. Shoe Store_Skeleton_6.0\ShoeStore.csproj", "{A478F31B-6C22-4F38-8C4B-3F48172328CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.BaristaContest", "01.BaristaContest\01.BaristaContest.csproj", "{51C2C483-1EA0-41CE-81C6-5D83286F139E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.BaristaContest", "01.BaristaContest\01.BaristaContest.csproj", "{51C2C483-1EA0-41CE-81C6-5D83286F139E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Help-A-Mole", "02.Help-A-Mole\02.Help-A-Mole.csproj", "{D0C7CAC4-19CB-4CF2-A21B-1E6D1DEEBADC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Help-A-Mole", "02.Help-A-Mole\02.Help-A-Mole.csproj", "{D0C7CAC4-19CB-4CF2-A21B-1E6D1DEEBADC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Basketball", "03. Basketball_Skeleton (1)\Basketball.csproj", "{F6C9E6D7-5FF0-4A6F-9841-E34C4990347D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.TilesMaster", "01.TilesMaster\01.TilesMaster.csproj", "{D1486766-C457-4B03-A2CC-F276679A1521}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.TilesMaster", "01.TilesMaster\01.TilesMaster.csproj", "{D1486766-C457-4B03-A2CC-F276679A1521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.WallDestroyer", "02.WallDestroyer\02.WallDestroyer.csproj", "{2736201F-CBB1-4DD0-A4F7-7CF78F91578F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.WallDestroyer", "02.WallDestroyer\02.WallDestroyer.csproj", "{2736201F-CBB1-4DD0-A4F7-7CF78F91578F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Renovators", "03. Renovators_Skeleton\Renovators.csproj", "{E03FEFA8-F905-48C7-951D-CC19DE4BDF71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.MealPlan", "01.MealPlan\01.MealPlan.csproj", "{E6EE21EA-02BE-4D6E-933C-C4E9A9A8AD38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.TruffleHunter", "02.TruffleHunter\02.TruffleHunter.csproj", "{2AEA1082-2A9D-4F6D-999A-1ADACB72105A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoo", "Zoo\Zoo.csproj", "{F6A62625-617C-40AC-B65A-24D8C0AFEC0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{E03FEFA8-F905-48C7-951D-CC19DE4BDF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E03FEFA8-F905-48C7-951D-CC19DE4BDF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E03FEFA8-F905-48C7-951D-CC19DE4BDF71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6EE21EA-02BE-4D6E-933C-C4E9A9A8AD38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EE21EA-02BE-4D6E-933C-C4E9A9A8AD38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EE21EA-02BE-4D6E-933C-C4E9A9A8AD38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EE21EA-02BE-4D6E-933C-C4E9A9A8AD38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AEA1082-2A9D-4F6D-999A-1ADACB72105A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEA1082-2A9D-4F6D-999A-1ADACB72105A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEA1082-2A9D-4F6D-999A-1ADACB72105A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEA1082-2A9D-4F6D-999A-1ADACB72105A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A62625-617C-40AC-B65A-24D8C0AFEC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A62625-617C-40AC-B65A-24D8C0AFEC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A62625-617C-40AC-B65A-24D8C0AFEC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A62625-617C-40AC-B65A-24D8C0AFEC0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
